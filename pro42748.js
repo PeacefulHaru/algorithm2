@@ -1,4 +1,4 @@
-
+// ! 100%, First Trial
 
 const solution = (array, commands) => {
   const answer = [];
