@@ -2,8 +2,9 @@
 
 const solution = (array, commands) => {
     return commands.map(command => {
-      const sliced = array.slice(command[0] - 1, command[1]).sort((a, b) => a - b)
-      return sliced[command[2] - 1]
+      const [left, right, at] = command
+      const sliced = array.slice(left - 1, right).sort((a, b) => a - b)
+      return sliced[at - 1]
     })
   }
   
