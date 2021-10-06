@@ -3,7 +3,11 @@
  * This lambda file supports only ES5
  */
 
-// ! Modified on October, 2021
+// ! Version 1.0
+
+exports.print = data => console.log(data)
+
+// ! Version 1.0 - Modified on October, 2021
 // * The most efficient way to define if the number is prime
 exports.isPrime = (num) => {
   if (num < 2) return false
@@ -17,7 +21,7 @@ exports.isPrime = (num) => {
   return true // as it has passed tests above
 }
 
-// ! Modified on October, 2021
+// ! Version 1.0 - Modified on October, 2021
 // * 
 exports.arrayMatch = (arr, arr2) => {
   if (arr.length !== arr2.length) return false
