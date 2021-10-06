@@ -11,21 +11,7 @@
  */
 
  const { green, red } = require('chalk')
- 
- // ! This prime calculator is proved to be the fastest, unless
- // ! you have a list of prime numbers
- const isPrime = (num) => {
-   if (num === 1) return false
-   if (num === 2) return true
-   if (num % 2 === 0) return false
-   
-   const primeCheckingMax = Math.sqrt(num)
-   for (let i = 3; i < primeCheckingMax; i++) {
-     if (num % i === 0) return false // not prime
-   }
- 
-   return true // as it has passed tests above
- }
+ const { isPrime } = require('./lambda')
  
  const solution = (input) => {
    let answerCnt = 0;
